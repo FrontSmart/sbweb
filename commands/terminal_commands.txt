@@ -1,0 +1,9 @@
+1) cd ..
+2) cd <path>
+3) ls
+4) touch <filename>
+5) mkdir <foldername>
+6) cd ~
+7) clear
+8) rm <filename>
+9) rm -rf <foldername>

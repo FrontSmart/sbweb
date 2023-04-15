@@ -1,0 +1,102 @@
+1) To initialize a git repository in your folder:
+git init
+
+2) To see the status of staging area:
+git status
+
+3) To set or change a user name:
+git config --global user.name "<your user name>"
+
+4) To set or change a user email:
+git config --global user.email <user's email>
+
+5) git config --list
+
+6) To see user name:
+git config user.name
+
+7) To see user email
+git config user.email
+
+8) To add all files in the folder to the staging area:
+git add .
+To add specified file to the staging area:
+git add <filename>
+
+9) git --version
+
+10) To remove a file intirely - from staging area and from folder as well:
+git rm -f <filename>
+To remove a file from the staging area only:
+git rm --cached <filename>
+
+11) Commit allows you to take a snapshot of all the changes and modifications you have done at the time
+and store them in the tree!
+git commit --help
+git commit -m "<commit message>"
+
+12) To see a list of all commits:
+git log
+To see what files were changed in the commits:
+git log --raw
+To display exactly what changed in the files.
+git log --patch
+To see commits info in one line for each commit:
+git log --oneline
+
+13) git diff <filename>
+
+14) To move between branches and to move back in time(we don't delete all the revisions):
+git checkout <commit id>
+To get back to the top:
+git checkout master
+So it allows you to move down and up(back and forth) in the master's tree. If you have branches - you will be able to move left/right
+to the branches as well.
+
+15) To revert one commit:
+git revert <commit id>
+It is a safe way to revert changes done in a particular one commit. And now we still are able to
+use: git checkout <reverted commit id>
+Also if you want to get back what you reverted in commit X, you can revert the commit in which you reverted the commit X!
+
+16) You need to be very careful when using reset with --hard flag:
+git reset --hard <reset commit id>
+As it removes all the commits that happened after the one specified in the <reset commit id>!
+It is not recommended to use git reset and git revert often! 
+Types of reset:
+--soft - is actually the same as git checkout!
+It is usefull when you made a mistake in the commit message, you do: git reset --soft <previous commit id>
+And now you see all the files from your last commit in the staging area, so you can recommit 
+with a proper message.
+SO it moves your HEAD revision to <previous commit>(the commit you specified in git reset), and your
+changes are still in index(the changes are ADDED and ready to be committed)!
+
+--mixed
+It works as --soft, but all the files from your last commit are removed from the staging area as well.
+So you need to do : git add
+And then commit.
+It moves your HEAD revision to <previous commit>(the commit you specified in git reset), and your
+changes are still in index(the changes are ADDED and ready to be committed)!
+SO it moves your HEAD revision to <previous commit>(the commit you specified in git reset), and your
+changes are NOT in index(the changes are NOT added to the staging area)!
+
+--hard - the most commonly used. It is used when you crashed something and you have to reset
+to the last working version of your project!
+SO it moves your HEAD revision to <previous commit>(the commit you specified in git reset), and your
+changes are NOT in index(the changes are NOT added to the staging area)! AND all the changes in commits after
+<previous commit>(the commit you specified in git reset) are NOT THERE. Files are deleted, changes are lost!
+
+17) A nice feature in git - you can create a file .gitignore
+and put all files and directories that you whant to be ignored by git.
+If after adding a file or dir to .gitignore, you still see those files/dirs as unstaged etc...
+you need to remove all untracked cached files: git rm -r --cached .
+It will remove all of the cached files.
+
+18) Git Branches:
+Git branches are a way to create separate development paths without overriding or creating copies of your project.
+Branches can be added, deleted, and merged, just like regular commits.
+
+Branches can be used to:
+- Create separate development paths without overriding progress.
+- Separate different end goals of your project.
+- Creates separate branches for each stage of development(realease, development, fixes, master).

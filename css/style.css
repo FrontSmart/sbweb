@@ -1,0 +1,148 @@
+/*For more straightforward sizing in CSS, we switch the global box-sizing 
+value from content-box to border-box. This ensures padding does not affect 
+he final computed width of an element, but it can cause problems with some 
+hird party software like Google Maps and Google Custom Search Engine.
+
+On the rare occasion you need to override it, use something like the following:*/
+/*.selector-for-some-widget {
+  box-sizing: content-box;
+}*/
+
+header{
+	border-bottom: 3px;
+	border-bottom-style: ridge;
+	border-bottom-color: #ffc045;
+	background-color: #0a91ab;
+}
+
+.navbar{
+	padding-left:2rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+.img-rounded{
+	border-radius: 50%;
+}
+
+.navbar-brand span{
+	font-size: 25px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+.main-child{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 3rem;
+}
+
+#about .card{
+	border: none;
+}
+
+#about .card h5{
+	font-size: 200%;
+}
+
+#about .card-img-top{
+	width: 70%;
+}
+
+#myCanvasContainer canvas{
+	aspect-ratio: auto 400 / 400;
+}
+
+#education div{
+	flex-basis: 80%;
+}
+
+#courses div{
+	flex-basis: 80%;
+}
+
+#experience{
+	margin-bottom: 50px;
+}
+
+#experience div{
+	flex-basis: 80%;
+}
+
+.fa{
+	padding: 10px 20px;
+	color: #c1c1c1;
+	border: 2px solid #e2e2e2;
+	margin-right: 20px;
+	border-radius: 0.25rem;
+}
+
+.facebook-link:hover{
+	color: #16a6fb;
+	border: 2px solid #16a6fb;
+	box-shadow: 2px 2px 2px #16a6fb;
+}
+
+.github-link:hover{
+	color: #000;
+	border: 2px solid #000;
+	box-shadow: 2px 2px 2px #000;
+}
+
+.linkedin-link:hover{
+	color: #0a66c1;
+	border: 2px solid #0a66c1;
+	box-shadow: 2px 2px 2px #0a66c1;
+}
+
+.card{
+	border-radius: 0.25rem;
+	border: 2px solid #e2e2e2;
+	box-shadow: 2px 2px 2px #e2e2e2;
+}
+
+#about .card{
+	box-shadow: none;
+}
+
+/*.card:hover{
+	border: 2px solid #0a91ab;
+	box-shadow: 2px 2px 2px #0a91ab;	
+}*/
+
+/*#courses .card:hover h5{
+	color: #0a91ab;
+}
+
+#courses .card:hover p{
+	color: #0a91ab;
+}
+
+#courses .card:hover .card-header:first-child{
+	background-color: #bcd4ff;
+}*/
+
+.button{
+	background-color: #fff;
+	border: 2px solid #e2e2e2;
+	border-radius: 0.25rem;
+	color: #c1c1c1;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button:hover{
+	color: #0a91ab;
+	border: 2px solid #0a91ab;
+	box-shadow: 2px 2px 2px #0a91ab;
+	text-decoration: none;
+	font-weight: bold;
+}

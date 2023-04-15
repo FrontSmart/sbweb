@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript">
+		var options = {
+			textColour: '#0a91ab',
+			outlineColour: '#fff',
+			textHeight: 15,
+			reverse: true,
+			depth: 0.4,
+			minSpeed: 0.02,
+			maxSpeed: 0.25,
+			initial: [0.03, 0.04],
+			minBrightness: 0.3,
+			zoomMin: 0.7,
+			zoomMax: 1,
+			outlineMethod: "colour",
+			outlineColour: "#ffc045",
+			dragControl: true
+		};
+		// https://www.goat1000.com/tagcanvas-options.php
+		window.onload = function() {
+			try {
+				TagCanvas.Start('myCanvas', '', options);
+			} catch(e) {
+				document.getElementById('myCanvasContainer').style.display = 'none';
+			}
+		};
+	</script>
+</head>
+<body>
+	<header>
+		<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="img/cv_img.png">
+				<!-- <img src="img/cv_img.png" width="40" height="40" class="d-inline-block align-top img-rounded" alt=""> -->
+				<span>&lt;CV/&gt;</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link active" href="#about">About me<span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="#education">Education</a>
+					<a class="nav-item nav-link" href="#courses">Courses</a>
+					<a class="nav-item nav-link" href="#experience">Experience</a>
+					<a class="nav-item nav-link disabled" href="#">Disabled</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="main">
+		<div id="about" class="main-child">
+			<div class="card" style="width: 20rem;">
+				<img class="card-img-top img-rounded" src="img/cv_img.png" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Serhii Bereznievatyi</h5>
+					<p class="card-text">Phone: +38068 87 33 719</p>
+					<p class="card-text">Email: Serhii.Bereznievatyi@gmail.com</p>
+					<a href="https://www.facebook.com/serg.bereznevatiy/" target="_blank"><i style="font-size: 30px" class="fa facebook-link">&#xf09a;</i></a>
+					<a href="https://github.com/FrontSmart" target="_blank"><i style="font-size: 30px" class="fa github-link">&#xf09b;</i></a>
+					<a href="https://www.linkedin.com/in/serhiibereznievatyi/" target="_blank"><i style="font-size: 30px" class="fa linkedin-link">&#xf0e1;</i></a>
+				</div>
+			</div>	
+			<div class="d-none d-md-block">
+				<div class="card">
+					<div class="card-body">
+						<div id="myCanvasContainer">
+							<!-- https://www.goat1000.com/tagcanvas.php#links -->
+							<canvas width="400" height="400" id="myCanvas">
+							<p>Anything in here will be replaced on browsers that support the canvas element</p>
+							<ul>
+								<li><a href="#" target="_blank">HTML</a></li>
+								<li><a href="#">CSS</a></li>
+								<li><a href="#">Python</a></li>
+								<li><a href="#">JQuery</a></li>
+								<li><a href="#">FIX</a></li>
+								<li><a href="#">Git</a></li>
+								<li><a href="#">XML</a></li>
+								<li><a href="#">Svn</a></li>
+								<li><a href="#">Bootstrap</a></li>
+								<li><a href="#">QA</a></li>
+								<li><a href="#">RegExp</a></li>
+							</ul>
+							</canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="education" class="main-child">
+			<div class="card">
+				<h5 class="card-header">EDUCATION</h5>
+				<div class="card-body">
+					<h5 class="card-title">Kryvyi Rih State Pedagogical University</h5>
+					<p class="card-text">I studied at the Kryvyi Rih State Pedagogical University(also refferred as KDPU), speciality - physics and basics of computer science. Graduated with a bachelour degree in 2007.</p>
+					<a href="https://kdpu.edu.ua/" target="_blank" class="button">KDPU</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="courses" class="main-child">
+			<div class="card">
+				<h5 class="card-header">COURSES</h5>
+				<div class="card-body">
+					<h5 class="card-title">Englishouse, 2011 - 2014</h5>
+					<p class="card-text">I was taking English courses at the Englishouse school and achived an upper-intermediate level. In addition, from time to time I attended different english-speaking clubs that I was able to find in our city.</p>
+					<a href="https://englishouse.ua/" target="_blank" class="button">Englishouse</a>
+					<br>
+					<br>
+					<hr>
+					<h5 class="card-title">LevelUp, 2017 - 2018</h5>
+					<p class="card-text">I got a certificate of a front-end developer. During the course mostly we studied the following:</p>
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Bootstrap</li>
+						<li>Javascript</li>
+						<li>JQuery</li>
+					</ul>
+					<a href="https://levelup.ua/" target="_blank" class="button">LevelUp</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="experience" class="main-child">
+			<div class="card">
+				<h5 class="card-header">EXPERIENCE</h5>
+				<div class="card-body">
+					<h5 class="card-title">Moderator, Slando --> OLX, 2011 - 2018</h5>
+					<p class="card-text">I worked at support team as a moderator and was responsible for reviewing ads before posting(pre-moderation), making sure that ads are in compliance with the website rules. As well, we looked into the complaints about already posted ads and determined whether fraud takes place or not(post-moderation). We did our best to make the website safe and more convenient marketplace.</p>
+					<a href="https://www.olx.ua/" target="_blank" class="button">OLX</a>
+					<br>
+					<br>
+					<hr>
+					<h5 class="card-title">Certification Engineer, Inforeach, 2018 - 2023</h5>
+					<p class="card-text">I have been working as a certification engineer at Inforeach since 2018. Inforeach is a provider of a software for electronic trading, and in 2 words I am responsible for the software customization and testing(usually on a call, according to a cert script), working on new projects with new brokers as well as updating existing configurations to the newest specs. If we certify a new configuration we usually perform functional testing trying to cover all test cases from the script, if we make minor changes in already certified configuration - we do smoke tests, or if changes are not minor and can affect other parts of the configuration - we perform regression testing. Mostly I create XML configurations, deal with FIX protocol, git, svn, sometimes with regular expressions for validation rules.
+					<br>
+					Also when time permits, I write auto tests and check what has gone wrong if existing tests failed.
+					<br>
+					I have taken part in hundreds of projects for the last 5 years and helped to strengthen our reputation as one of the best firms in the field.
+					</p>
+					<a href="https://www.inforeachinc.com/" target="_blank" class="button">Inforeach</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+	<script src="js/jquery.tagcanvas.min.js" type="text/javascript"></script>
+</body>
+</html>
