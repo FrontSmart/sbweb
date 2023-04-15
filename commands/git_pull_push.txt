@@ -5,3 +5,4 @@ origin  https://github.com/FrontSmart/sbweb.git (fetch)
 origin  https://github.com/FrontSmart/sbweb.git (push)
 3) git pull origin main/master
 4) git branch --set-upstream-to=origin/main master
+5)
