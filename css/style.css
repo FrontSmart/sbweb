@@ -37,7 +37,7 @@ header{
 .main-child{
 	display: flex;
 	justify-content: space-between;
-	padding-top: 3rem;
+	padding-top: 7rem;
 	margin: 0 10%;
 }
 
@@ -215,6 +215,16 @@ header{
 
 #arm .arm-block:nth-child(11){
 	left: -206px;
+	top: -69px;	
+}
+
+#arm .arm-block:nth-child(12){
+	left: -230px;
+	top: -69px;	
+}
+
+#arm .arm-block:nth-child(13){
+	left: -254px;
 	top: -69px;	
 }
 
