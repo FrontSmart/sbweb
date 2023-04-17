@@ -425,6 +425,84 @@ header{
 	border-radius: 3px;
 }
 
+/* top */
+
+#top-block{
+	position: absolute;
+	top: -123px;
+	border-bottom: 65px solid #ffc045;
+	border-top: 35px solid transparent;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+}
+
+#top-white{
+	position: absolute;
+	top: -32px;
+	border-bottom: 54px solid #fff;
+	border-top: 44px solid transparent;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	left: -9px;
+}
+
+#top-line1{
+	position: absolute;
+	width: 15px;
+	height: 3px;
+	background-color: #ffc045;
+	top: 47px;
+	left: -7px;
+}
+
+#top-line2{
+	position: absolute;
+	width: 23px;
+	height: 2px;
+	background-color: #ffc045;
+	top: 56px;
+	left: -11px;
+	transform: rotate(-45deg);
+}
+
+#top-line3{
+	position: absolute;
+	width: 23px;
+	height: 2px;
+	background-color: #ffc045;
+	top: 56px;
+	left: -11px;
+	transform: rotate(45deg);
+}
+
+#top-line4{
+	position: absolute;
+	width: 23px;
+	height: 2px;
+	background-color:#ffc045;
+	top: 36px;
+	left: -10px;
+	transform: rotate(60deg);
+}
+
+#top-line5{
+	position: absolute;
+	width: 23px;
+	height: 2px;
+	background-color:#ffc045;
+	top: 36px;
+	left: -13px;
+	transform: rotate(-60deg);
+}
+
+#top-circle{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: coral;
+	left: -5px;
+	border-radius: 50%;
+}
 
 /*^^^^^^^^^^^^^^^^^ CRANE END */
 
