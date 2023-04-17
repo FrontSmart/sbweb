@@ -30,6 +30,11 @@ git rm -f <filename>
 To remove a file from the staging area only:
 git rm --cached <filename>
 
+if a file was committed:
+git rm <file>
+git commit -m "Removed the <file>."
+git push
+
 11) Commit allows you to take a snapshot of all the changes and modifications you have done at the time
 and store them in the tree!
 git commit --help
@@ -100,3 +105,10 @@ Branches can be used to:
 - Create separate development paths without overriding progress.
 - Separate different end goals of your project.
 - Creates separate branches for each stage of development(realease, development, fixes, master).
+
+a) To create a new branch: git checkout -b <name of a new branch>
+Or: git branch <name of a branch>
+b) To switch back to the master branch: git checkout master
+c) To list all of my current branches: git branch -a
+d) To remove a branch: git branch -d <name of the branch>
+e) To merge a branch into a current branch you are on: git merge devbranch
