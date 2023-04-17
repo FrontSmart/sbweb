@@ -1,9 +1,0 @@
-1) To create a new branch: git checkout -b <name of a new branch>
-Or: git branch <name of a branch>
-2) To switch back to the master branch: git checkout master
-3) To list all of my current branches: git branch -a
-4) To remove a branch: git branch -d <name of the branch>
-
-$$$$$$$$$$$ Merging branches:
-5) To merge a branch into a current branch you are on: git merge devbranch
-6) To merge a source branch into a target branch regardless on whichever branch you are on:
