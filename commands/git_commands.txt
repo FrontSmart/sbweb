@@ -112,3 +112,21 @@ b) To switch back to the master branch: git checkout master
 c) To list all of my current branches: git branch -a
 d) To remove a branch: git branch -d <name of the branch>
 e) To merge a branch into a current branch you are on: git merge devbranch
+
+19) GitHub is something that allows to store your repo on shared server.
+You can interact with the remote repo in a user-friendly manner, you can collaborate with other working together on some projects.
+GitHub allows you to:
+- have a portfolio of your best work.
+- open opportunities you might not have with a local repository.
+- easy access from any device in any location.
+
+GitHub is a standard for hosting Git repositories.
+
+a) git remote add origin <http path to github repo>
+For example: git remote add origin https://github.com/FrontSmart/sbweb.git
+b) 'git remote -v' shold show the following:
+origin  https://github.com/FrontSmart/sbweb.git (fetch)
+origin  https://github.com/FrontSmart/sbweb.git (push)
+c) git pull origin main/master
+git pull
+d) git push
