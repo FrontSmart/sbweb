@@ -75,10 +75,10 @@ header{
 }
 
 #hook {
+	position: absolute;
 	font-family: "Rokkitt", sans-serif;
 	font-size: 1.25em;
 	left: 40px;
-	position: absolute;
 	top: -33px;
 	transform: rotate(182deg) rotateY(223deg);
 	color: #383e46;
@@ -103,6 +103,7 @@ header{
 	background-color: #383e46;
 	left: 40px;
 	top: -44px;
+	border-radius: 2px;
 }
 
 #line2 {
@@ -130,11 +131,12 @@ header{
 	left: 33px;
 	top: -95px;
 	background-color: #383e46;
+	border-radius: 2px;
 }
 
 /* arm */
 
-#arm div{
+#arm *{
 	position: absolute;
 }
 
@@ -251,6 +253,177 @@ header{
 	left: 4px;
 	transform: rotate(45deg) rotateY(0deg);
 }
+
+#counterweight{
+	width: 20px;
+	height: 40px;
+	background-color: #4c4f5e;
+	left: -270px;
+	top: -82px;
+	border-radius: 2px;
+}
+
+.counterweight-additional{
+	border-radius: 2px;
+}
+
+.counterweight-additional:nth-child(1){
+	left: -20px;
+	top: 5px;
+	height: 60px;
+	width: 20px;
+	background-color: #4c4f5e;
+}
+
+.counterweight-additional:nth-child(2){
+	top: 37px;
+	height: 18px;
+	width: 35px;
+	background-color: #b3b3b3;
+}
+
+.counterweight-additional:nth-child(3){
+	top: -30px;
+	left: -35px;
+	height: 70px;
+	width: 15px;
+	background-color: #4c4f5e;
+}
+
+/* leg */
+
+#leg{
+	position: absolute;
+	width: 10px;
+	height:10px;
+	background-color: red;
+	left: -182px;
+	top: -45px;
+}
+
+#leg *{
+	position: absolute;
+}
+
+#leg .arm-block:nth-child(2){
+	top: 24px;	
+}
+
+#leg .arm-block:nth-child(3){
+	top: 48px;	
+}
+
+#leg .arm-block:nth-child(4){
+	top: 72px;	
+}
+
+#leg .arm-block:nth-child(5){
+	top: 96px;	
+}
+
+#leg .arm-block:nth-child(6){
+	top: 120px;	
+}
+
+#leg .arm-block:nth-child(7){
+	top: 144px;	
+}
+
+#leg .arm-block:nth-child(8){
+	top: 168px;	
+}
+
+#leg .arm-block:nth-child(9){
+	top: 192px;	
+}
+
+#leg .arm-block:nth-child(10){
+	top: 216px;	
+}
+
+#leg .arm-block:nth-child(11){
+	top: 240px;	
+}
+
+#leg .arm-block:nth-child(12){
+	top: 264px;	
+}
+
+#leg .arm-block:nth-child(13){
+	top: 288px;	
+}
+
+#leg .arm-block:nth-child(14){
+	top: 312px;	
+}
+
+#leg .arm-block:nth-child(15){
+	top: 336px;	
+}
+
+/* base */
+
+#base{
+	position: absolute;
+	width: 144px;
+	height:10px;
+	background-color: #373e46;
+	left: -242px;
+	top: 315px;
+	border-radius: 10px 10px 0 0;
+}
+
+#base div{
+	position: absolute;
+	width: 8px;
+	height: 140px;
+	background-color: #373e46;
+}
+
+#base div:nth-child(1){
+	left: 52px;
+	top:-140px;
+	border-radius: 10px 0 0 0;
+}
+
+#base div:nth-child(2){
+	left: 84px;
+	top:-140px;
+	border-radius: 0 10px 0 0;
+}
+
+/* cabin */
+
+#cabin{
+	position: absolute;
+	width: 40px;
+	height: 25px;
+	background-color: #ffe464;
+	border-radius: 3px;
+	border-radius-top-right: 5px;
+	left: -7px;
+}
+
+#cabin div:nth-child(1){
+	position: absolute;
+	left: 20px;
+	top: 3px;
+	width: 15px;
+	height: 12px;
+	background-color: #03618f;
+	border-radius: 3px;
+}
+
+#cabin div:nth-child(2){
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	width: 10px;
+	height: 20px;
+	background-color: #cf9a2a;
+	border-radius: 3px;
+}
+
 
 /*^^^^^^^^^^^^^^^^^ CRANE END */
 
